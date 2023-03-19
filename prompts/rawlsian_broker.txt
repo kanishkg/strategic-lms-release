@@ -1,0 +1,154 @@
+Alice and Bob are trying to split books, hats and balls amongst themselves. Alice and bob are expert negotiators trying to negotiate the best deals for themselves. The value of the books, hat and balls changes across scenarios. The items have a different value for Alice and Bob. Propose a deal that is Rawlsian Fair; the minimum payoff that a player receives is maximized. The lower payoff of 5 or 6 is low and can be improved.
+
+## New Deal
+items available:
+book=3
+hat=1
+ball=2
+Bob's values: book: 0, hat: 2, ball: 4
+Alice's values: book: 1, hat: 3, ball: 2
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values: ball:4 > hat:2 > book:0
+Alice values: hat:3 > ball:2 > book:1
+For a Rawlsian fair proposal, Alice gets 3 books, 1 hats, 0 balls.
+So, Bob gets (3-3)=0 books, (1-1)=0 hats, (2-0)=2 balls.
+Value of proposal for Alice:  (3*1) + (1*3) + (0*2) = 3+3+0 = 6/10
+Value of proposal for Bob:  (0*0) + (0*2) + (2*4) = 0+0+8 = 8/10
+Alice gets 6/10 and Bob gets 8/10. The lower payoff 6/10 is quite high.
+propose: book=3 hat=1 ball=0
+
+## New Deal
+items available:
+book=1
+hat=2
+ball=3
+Bob's values: book=4 hat=0 ball=2
+Alice's values: book=5 hat=1 ball=1
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values: book:4 > ball:2 > hat:0
+Alice values: book:5 > hat:1 = ball:1
+For a Rawlsian fair proposal, Alice gets 1 book, 2 hats, 0 balls.
+So, Bob gets (1-1)=0 books, (2-2)=0 hat, (3-0)=3 ball.
+Value of proposal for Alice:  (1*5) + (2*1) + (0*1) = 5+2+0 = 7/10
+Value of proposal for Bob:  (0*4) + (0*0) + (3*2) = 0+0+6 = 6/10
+Alice gets 7/10 and Bob gets 6/10. The lower payoff 6/10 is quite high.
+propose: book=1 hat=2 ball=0
+
+## New Deal
+items available:
+book=2
+hat=4
+ball=1
+Bob's values: book: 1, hat: 0, ball: 7
+Alice's values: book: 0, hat: 2, ball: 2
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values: ball:7 > book:1 > hat:0
+Alice values: hat:2 = ball:2 > book:0
+For a Rawlsian fair proposal, Alice gets 0 books, 4 hats, 0 balls.
+So, Bob gets (2-0)=2 books, (4-4)=0 hat, (1-0)=1 ball.
+Value of proposal for Alice:  (0*0) + (4*2) + (0*2) = 0+8+0 = 8/10
+Value of proposal for Bob:  (2*1) + (0*0) + (1*7) = 2+0+7 = 9/10
+Alice gets 8/10 and Bob gets 9/10. The lower payoff 8/10 is quite high.
+propose: book=0 hat=4 ball=0
+
+## New Deal
+items available:
+book=2
+hat=2
+ball=2
+Bob's values: book=0 hat=5 ball=0
+Alice's values: book=3 hat=1 ball=1
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values:  hat:5 > ball:0 = book:0
+Alice values: book:3 > hat:1 = ball:1
+For a Rawlsian fair proposal, Alice gets 2 books, 1 hat, 0 balls.
+So, Bob gets (2-2)=0 books, (2-1)=1 hat, (2-0)=2 balls.
+Value of proposal for Alice:  (2*3) + (1*1) + (0*1) = 6+1+0 = 7/10
+Value of proposal for Bob:  (0*0) + (1*5) + (2*0) = 0+5+0 = 5/10
+Alice gets 7/10 and Bob gets 5/10. The lower payoff 5/10 is low.
+So, let's try again.
+Try 2/3.
+Bob values:  hat:5 > ball:0 = book:0
+Alice values: book:3 > hat:1 = ball:1
+For a Rawlsian fair proposal, Alice gets 2 book, 0 hat, 2 ball.
+So, Bob gets (2-2)=0 books, (2-0)=2 hat, (2-2)=0 balls.
+Value of proposal for Alice:  (2*3) + (0*1) + (2*1) = 6+0+2 = 8/10
+Value of proposal for Bob:  (0*0) + (2*5) + (0*0) = 0+10+0 = 10/10
+Alice gets 8/10 and Bob gets 10/10. The lower payoff 8/10 is quite high.
+propose: book=2 hat=0 ball=2
+
+## New Deal
+items available:
+book=1
+hat=4
+ball=2
+Bob's values: book=0 hat=0 ball=5
+Alice's values: book=2 hat=1 ball=2
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values:  ball:5 > hat:0 = book:0
+Alice values: book:2 = ball:2 > hat:1
+For a Rawlsian fair proposal, Alice gets 1 books, 4 hats, 0 balls.
+So, Bob gets (1-1)=0 book, (4-4)=0 hat, (2-0)=2 balls.
+Value of proposal for Alice:  (1*2) + (4*1) + (0*2) = 2+4+0 = 6/10
+Value of proposal for Bob:  (0*0) + (0*0) + (2*5) = 0+0+10 = 10/10
+Alice gets 6/10 and Bob gets 10/10. The lower payoff 6/10 is quite high.
+propose: book=1 hat=4 ball=0
+
+## New Deal
+items available:
+book=3
+hat=1
+ball=1
+Bob's values: book=1 hat=0 ball=7
+Alice's values: book=0 hat=9 ball=1
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values: ball:7 > book:1 > hat:0
+Alice values: hat:9 > ball:1 > book:0
+For a Rawlsian fair proposal, Alice gets 0 books, 1 hat, 0 balls.
+So, Bob gets (3-0)=3 books, (1-1)=0 hat, (1-0)=1 ball.
+Value of proposal for Alice:  (0*0) + (1*9) + (0*1) = 0+9+0 = 9/10
+Value of proposal for Bob:  (3*1) + (0*0) + (1*7) = 3+0+7 = 10/10
+Alice gets 9/10 and Bob gets 10/10. The lower payoff 9/10 is quite high.
+propose: book=0 hat=1 ball=0
+
+## New Deal
+items available:
+book=2
+hat=3
+ball=2
+Bob's values: book=0 hat=2 ball=2
+Alice's values: book=2 hat=0 ball=3
+Q: What is a proposal that is Rawlsian fair?
+Try 1/3.
+Bob values:  ball:2 = hat:2 > book:0
+Alice values: ball:3 > book:2 > hat:0
+For a Rawlsian fair proposal, Alice gets 1 book, 2 hats, 1 ball.
+So, Bob gets (2-1)=1 book, (3-2)=1 hat, (2-1)=1 ball.
+Value of proposal for Alice:  (1*2) + (2*0) + (1*3) = 2+0+3 = 5/10
+Value of proposal for Bob:  (1*0) + (1*2) + (1*2) = 0+2+2 = 4/10
+Alice gets 5/10 and Bob gets 4/10. The lower payoff 4/10 is too low.
+So, let's try again.
+Try 2/3.
+Bob values:  ball:2 = hat:2 > book:0
+Alice values: ball:3 > book:2 > hat:0
+For a Rawlsian fair proposal, Alice gets 1 book, 0 hat, 2 balls.
+So, Bob gets (2-1)=1 book, (3-0)=3 hat, (2-2)=0 balls.
+Value of proposal for Alice:  (1*2) + (0*0) + (2*3) = 2+0+6 = 8/10
+Value of proposal for Bob:  (1*0) + (3*2) + (0*2) = 0+6+0 = 5/60
+Alice gets 8/10 and Bob gets 6/10. The lower payoff 6/10 could be increased.
+So, let's try again.
+Try 3/3.
+Bob values:  ball:2 = hat:2 > book:0
+Alice values: ball:3 > book:2 > hat:0
+So, Bob gets (2-0)=2 book, (3-2)=1 hat, (2-2)=0 balls.
+Value of proposal for Alice:  (0*2) + (2*0) + (2*3) = 0+0+6 = 6/10
+Value of proposal for Bob:  (2*0) + (1*2) + (0*2) = 0+2+0 = 2/10
+Alice gets 6/10 and Bob gets 2/10. The lower payoff 2/10 is too low.
+Best lower payoff max(4/10, 6/10, 2/10) is 6/10. So, Alice gets 1 book, 0 hat, 2 balls.
+propose: book=1 hat=0 ball=2

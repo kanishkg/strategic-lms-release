@@ -1,0 +1,51 @@
+Q:Gopher and Bob are playing a game. Gopher and Bob get rewards according to these rules:
+1. Gopher:a1, Bob:b1, then Gopher reward gr11=8 and Bob reward br11=7
+2. Gopher:a1, Bob:b2, then Gopher reward gr12=6 and Bob reward br12=5
+3. Gopher:a2, Bob:b1, then Gopher reward gr21=4 and Bob reward br21=3
+4. Gopher:a2, Bob:b2, then Gopher reward gr22=2 and Bob reward br22=1
+Gopher and Bob are trying to maximize their reward. Bob thinks about their opponent and plays after thinking what Gopher might be thinking. Gopher thinks about other players' reasoning. What action should gopher play? pick from a1, a2, a1 or a2.
+A:Previous prediction: Gopher's action:a1
+Let's reason about what Bob wants to first.
+Bob wants to maximize his reward: br.
+When Gopher plays a1, Bob's rewards are,
+1. Gopher:a1, Bob:b1, then Gopher reward gr11=8 and Bob reward br11=7; Bob's reward r11=(br11)=br11=7
+2. Gopher:a1, Bob:b2, then Gopher reward gr12=6 and Bob reward br12=5; Bob's reward r12=(br12)=br12=5
+As b1=7, b2=5, 7>5, b1>b2, Bob will play b1.
+Let's think about what Gopher wants to do.
+Gopher wants to maximize his reward: gr.
+As Bob plays b1,
+1. Gopher:a1, Bob:b1, then Gopher reward gr11=8 and Bob reward br11=7; Gopher's reward r11=(gr11)=gr11=8
+3. Gopher:a2, Bob:b1, then Gopher reward gr21=4 and Bob reward br21=3; Gopher's reward r21=(gr21)=gr21=4
+As a1=8, a2=4, 8>4, a1>a2, Gopher will play a1.
+Gopher's action:a1.
+
+Q:Gopher and Bob are playing a game. Gopher and Bob get rewards according to these rules:
+1. Gopher:a1, Bob:b1, then Gopher reward gr11=-3 and Bob reward br11=-2
+2. Gopher:a1, Bob:b2, then Gopher reward gr12=-1 and Bob reward br12=0
+3. Gopher:a2, Bob:b1, then Gopher reward gr21=1 and Bob reward br21=2
+4. Gopher:a2, Bob:b2, then Gopher reward gr22=3 and Bob reward br22=4
+Gopher and Bob are trying to maximize their reward. Bob thinks about their opponent and plays after thinking what Gopher might be thinking. Gopher thinks about other players' reasoning. What action should gopher play? pick from a1, a2, a1 or a2.
+A:Previous prediction: Gopher's action:a2
+Let's reason about what Bob wants to first.
+Bob wants to maximize his reward: br.
+When Gopher plays a2, Bob's rewards are,
+3. Gopher:a2, Bob:b1, then Gopher reward gr21=1 and Bob reward br21=2; Bob's reward r21=(br21)=br21=2
+4. Gopher:a2, Bob:b2, then Gopher reward gr22=3 and Bob reward br22=4; Bob's reward r22=(br22)=br22=4
+As b1=2, b2=4, 4>2, b1<b2, Bob will play b2.
+Let's think about what Gopher wants to do.
+Gopher wants to maximize his reward: gr.
+As Bob plays b2,
+2. Gopher:a1, Bob:b2, then Gopher reward gr12=-1 and Bob reward br12=0; Gopher's reward r12=(gr12)=gr12=-1
+4. Gopher:a2, Bob:b2, then Gopher reward gr22=3 and Bob reward br22=4; Gopher's reward r22=(gr22)=gr22=3
+As a1=-1, a2=2, -1<3, a1<a2, Gopher will play a2.
+Gopher's action:a2.
+
+Gopher and Bob are playing a game. Gopher and Bob get rewards according to these rules:
+1. Gopher:a1, Bob:b1, then Gopher reward gr11=-3 and Bob reward br11=-2
+2. Gopher:a1, Bob:b2, then Gopher reward gr12=3 and Bob reward br12=-4
+3. Gopher:a2, Bob:b1, then Gopher reward gr21=1 and Bob reward br21=2
+4. Gopher:a2, Bob:b2, then Gopher reward gr22=-1 and Bob reward br22=4
+Gopher and Bob are trying to maximize their reward. Bob does about their opponent and plays after thinking what Gopher might be thinking. Gopher thinks about other players' reasoning. What action should gopher play? pick from a1, a2, a1 or a2.
+A:Previous prediction: Gopher's action:a1 or a2
+As previous prediction is a1 or a2, action agnostic, we will use the same reasoning as before.
+Gopher's action:a1 or a2

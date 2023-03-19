@@ -1,0 +1,86 @@
+Q:Bob and Gopher are playing a game. They get rewards with the following rules:
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4
+Bob and Gopher want to maximize their rewards. Bob does not think about their opponent and only plays the action with the highest expected reward.Gopher thinks about other players' reasoning. What action should Gopher play?
+A:Let's reason about what Bob wants.
+Bob wants to maximize their reward: br.
+Bob doesn't think about others. So, let's calculate the expected reward of Bob's actions.
+If Bob plays b1,
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2; Bob's reward r11=(br11)=br11=-1
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4; Bob's reward r12=(br12)=br12=5
+So, Bob's expected reward for action b1 is (-1+5)/2=4/2=2.0.
+If Bob plays b2,
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2; Bob's reward r21=(br21)=br21=1
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4; Bob's reward r22=(br22)=br22=3
+So, Bob's expected reward for action b2 is (1+3)/2=4/2=2.0.
+As Bob's reward for b1=2.0, b2=2.0, 2.0 = 2.0, b1 = b2, Bob will play b1 or b2.
+Let's reason about what Gopher wants.
+Gopher wants to maximize their reward: gr.
+As Bob will play b1 or b2, we need to calculate Gopher's expected reward over Bob's actions.
+If Gopher plays a1,
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2; Gopher's reward r11=(gr11)=gr11=-2
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2; Gopher's reward r21=(gr21)=gr21=2
+So, Gopher's expected reward for action a1 is (-2+2)/2=0/2=0.0.
+If Gopher plays a2,
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4; Gopher's reward r12=(gr12)=gr12=-4
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4; Gopher's reward r22=(gr22)=gr22=4
+So, Gopher's expected reward for action a2 is (-4+4)/2=0/2=0.0.
+As Gopher's reward for a1=0.0, a2=0.0, 0.0 = 0.0, a1 = a2, Gopher will play a1 or a2.
+Gopher's action:a1 or a2.
+
+Q:Bob and Gopher are playing a game. The world can be in state s1 or s2. Only Bob can see the state that the world is in. Gopher can see what Bob plays but cannot see the state of the world. They get rewards with the following rules:
+1. World: s1 then Bob:b1 then Gopher:a1, then; Bob's reward br111=1; Gopher's reward gr111=2
+2. World: s1 then Bob:b1 then Gopher:a2, then; Bob's reward br112=3; Gopher's reward gr112=4
+3. World: s1 then Bob:b2 then Gopher:a1, then; Bob's reward br121=5; Gopher's reward gr121=6
+4. World: s1 then Bob:b2 then Gopher:a2, then; Bob's reward br122=7; Gopher's reward gr122=8
+5. World: s2 then Bob:b1 then Gopher:a1, then; Bob's reward br211=0; Gopher's reward gr211=-1
+6. World: s2 then Bob:b1 then Gopher:a2, then; Bob's reward br212=-2; Gopher's reward gr212=4
+7. World: s2 then Bob:b2 then Gopher:a1, then; Bob's reward br221=-4; Gopher's reward gr221=-5
+8. World: s2 then Bob:b2 then Gopher:a2, then; Bob's reward br222=-6; Gopher's reward gr222=-7
+Bob and Gopher want to maximize their rewards. Bob does not think about their opponent and only plays the action with the highest expected reward. Gopher thinks about other players' reasoning. What action should Gopher play?
+A:Let's reason about what Bob wants.
+Bob wants to maximize their reward: br.
+Bob doesn't think about others. Bob can see the state of the world.
+So, let's calculate the expected reward of Bob's actions for the different world states.
+If world is in state s1,
+If Bob plays b1,
+1. World: s1 then Bob:b1 then Gopher:a1, then; Bob's reward br111=1; Gopher's reward gr111=2; Bob's reward r111=(br111)=br111=1
+2. World: s1 then Bob:b1 then Gopher:a2, then; Bob's reward br112=3; Gopher's reward gr112=4; Bob's reward r112=(br112)=br112=3
+So, Bob's expected reward for action b1 in s1 is (1+3)/2=4/2=2.0.
+If Bob plays b2,
+3. World: s1 then Bob:b2 then Gopher:a1, then; Bob's reward br121=5; Gopher's reward gr121=6; Bob's reward r121=(br121)=br121=5
+4. World: s1 then Bob:b2 then Gopher:a2, then; Bob's reward br122=7; Gopher's reward gr122=8; Bob's reward r122=(br122)=br122=7
+So, Bob's expected reward for action b2 in s1 is (5+7)/2=12/2=6.0.
+As Bob's reward for b1 in s1=2.0, b2 in s1=6.0, 2.0 < 6.0, b1 in s1 < b2 in s1, Bob will play b2 in s1.
+If world is in state s2,
+If Bob plays b1,
+5. World: s2 then Bob:b1 then Gopher:a1, then; Bob's reward br211=0; Gopher's reward gr211=-1; Bob's reward r211=(br211)=br211=0
+6. World: s2 then Bob:b1 then Gopher:a2, then; Bob's reward br212=-2; Gopher's reward gr212=4; Bob's reward r212=(br212)=br212=-2
+So, Bob's expected reward for action b1 in s2 is (0-2)/2=-2/2=-1.0.
+If Bob plays b2,
+7. World: s2 then Bob:b2 then Gopher:a1, then; Bob's reward br221=-4; Gopher's reward gr221=-5; Bob's reward r221=(br221)=br221=-4
+8. World: s2 then Bob:b2 then Gopher:a2, then; Bob's reward br222=-6; Gopher's reward gr222=-7; Bob's reward r222=(br222)=br222=-6
+So, Bob's expected reward for action b2 in s2 is (-4-6)/2=-10/2=-5.0.
+As Bob's reward for b1 in s2=-1.0, b2 in s2=-5.0, -1.0 > -5.0, b1 in s2 > b2 in s2, Bob will play b1 in s2.
+Let's reason about what Gopher wants.
+Gopher wants to maximize their reward: gr. Gopher can see what Bob plays but cannot see what the world state.
+As Bob will play b2 in s1 and b1 in s2, we need to calculate Gopher's expected reward for Bob's actions.
+If Bob plays b1, then Gopher can infer that the world is in s2.
+If Gopher plays a1,
+5. World: s2 then Bob:b1 then Gopher:a1, then; Bob's reward br211=0; Gopher's reward gr211=-1; Gopher's reward r211=(gr211)=gr211=-1
+So, Gopher's expected reward for action a1 when Bob plays b1 is (-1)/1=-1.0.
+If Gopher plays a2,
+6. World: s2 then Bob:b1 then Gopher:a2, then; Bob's reward br212=-2; Gopher's reward gr212=4; Gopher's reward r212=(gr212)=gr212=4
+So, Gopher's expected reward for action a2 when Bob plays b1 is (4)/1=4.0.
+As Gopher's reward for a1 when Bob plays b1=-1.0, a2 when Bob plays b1=4.0, -1.0 < 4.0, a1 when Bob plays b1 < a2 when Bob plays b1, Gopher will play a2 when Bob plays b1.
+If Bob plays b2, then Gopher can infer that the world is in s1.
+If Gopher plays a1,
+3. World: s1 then Bob:b2 then Gopher:a1, then; Bob's reward br121=5; Gopher's reward gr121=6; Gopher's reward r121=(gr121)=gr121=6
+So, Gopher's expected reward for action a1 when Bob plays b2 is (6)/1=6.0.
+If Gopher plays a2,
+4. World: s1 then Bob:b2 then Gopher:a2, then; Bob's reward br122=7; Gopher's reward gr122=8; Gopher's reward r122=(gr122)=gr122=8
+So, Gopher's expected reward for action a2 when Bob plays b2 is (8)/1=8.0.
+As Gopher's reward for a1 when Bob plays b2=6.0, a2 when Bob plays b2=8.0, 6.0 < 8.0, a1 when Bob plays b2 < a2 when Bob plays b2, Gopher will play a2 when Bob plays b2.
+Gopher's action:a2 when Bob plays b1 or a2 when Bob plays b2

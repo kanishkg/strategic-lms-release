@@ -1,0 +1,216 @@
+Alice and Bob are trying to split books, hats and balls amongst themselves. Alice and bob are expert negotiators trying to negotiate the best deals for themselves. The value of the books, hat and balls changes across scenarios. The items have a different value for Alice and Bob. Propose a deal where the Alice and Bob receive equal/ similar rewards. Try again 3 times at most.
+
+## New Deal
+items available:
+book=3
+hat=1
+ball=2
+Bob's values: book=0 hat=2 ball=4
+Alice's values: book=1 hat=3 ball=2
+Q: What is a proposal that gives similar payoffs?
+Try 1/3.
+items: book=3, hat=1, ball=2
+Bob values: ball:4 > hat:2 > book:0
+Alice values: hat:3 > ball:2 > book:1
+In a proposal with similar payoffs, Alice gets 3 books, 1 hats, 0 balls.
+So, Bob gets (3-3)=0 books, (1-1)=0 hats, (2-0)=2 balls.
+Value of proposal for Alice:  (3*1) + (1*3) + (0*2) = 3+3+0 = 6/10
+Value of proposal for Bob:  (0*0) + (0*2) + (2*4) = 0+0+8 = 8/10
+Alice gets 6/10 and Bob gets 8/10. Difference in payoffs 8-6 = 2. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 2/3.
+items: book=3, hat=1, ball=2
+Bob values: ball:4 > hat:2 > book:0
+Alice values: hat:3 > ball:2 > book:1
+old proposal: Alice gets 3 books, 1 hats, 0 balls. Alice gets 6/10 and Bob gets 8/10.
+new proposal: Alice gets 3 books, 0 hats, 1 balls.
+So, Bob gets (3-3)=0 books, (1-0)=1 hats, (2-1)=1 balls.
+Value of proposal for Alice:  (3*1) + (0*3) + (1*2) = 3+0+2 = 5/10
+Value of proposal for Bob:  (0*0) + (1*2) + (1*4) = 0+2+4 = 6/10
+Alice gets 5/10 and Bob gets 6/10. Difference in payoffs 6-5 = 1. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 3/3. last try.
+items: book=3, hat=1, ball=2
+Bob values: ball:4 > hat:2 > book:0
+Alice values: hat:3 > ball:2 > book:1
+old proposal: Alice gets 3 books, 0 hats, 1 balls. Alice gets 5/10 and Bob gets 6/10.
+new proposal: Alice gets 2 books, 0 hats, 2 balls.
+So, Bob gets (3-2)=1 books, (1-0)=1 hats, (2-2)=0 balls.
+Value of proposal for Alice:  (2*1) + (0*3) + (2*2) = 2+0+4 = 6/10
+Value of proposal for Bob:  (1*0) + (1*2) + (0*4) = 0+2+0 = 2/10
+Alice gets 6/10 and Bob gets 2/10. Difference in payoffs 6-2 = 4. This is a bad deal as payoffs are not close.
+Summary of tries:
+Try 1/3: Alice gets 6/10 and Bob gets 8/10. Difference in payoffs 8-6 = 2.
+Try 2/3: Alice gets 5/10 and Bob gets 6/10. Difference in payoffs 6-5 = 1.
+Try 3/3: Alice gets 6/10 and Bob gets 2/10. Difference in payoffs 6-2 = 4.
+So, the best deal is the second try.
+Minimum difference is 2. So, we go with try 2/3. Alice gets 0 books, 1 hats, 2 balls.
+propose: book=0 hat=1 ball=2
+
+## New Deal
+items available:
+book=1
+hat=4
+ball=2
+Bob's values: book=0 hat=0 ball=5
+Alice's values: book=2 hat=1 ball=2
+Q: What is a proposal that gives similar payoffs?
+Try 1/3.
+items: book=1, hat=4, ball=2
+Bob values: ball:5 > hat:0 = book:0
+Alice values: book:2 = ball:2 > hat:1
+In a proposal with similar payoffs, Alice gets 1 books, 4 hats, 0 balls.
+In a proposal with similar payoffs, Alice gets 1 book, 1 hats, 1 balls.
+So, Bob gets (1-1)=0 books, (4-1)=3 hats, (2-1)=1 balls.
+Value of proposal for Alice:  (1*2) + (1*1) + (1*1) = 2+1+1 = 4/10
+Value of proposal for Bob:  (0*0) + (3*0) + (1*5) = 0+0+5 = 5/10
+Alice gets 4/10 and Bob gets 5/10. Difference in payoffs 5-4 = 1. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 2/3.
+items: book=1, hat=4, ball=2
+Bob values: ball:5 > hat:0 = book:0
+Alice values: book:2 = ball:2 > hat:1
+old proposal: Alice gets 1 books, 1 hats, 1 balls. Alice gets 4/10 and Bob gets 5/10.
+new proposal: Alice gets 0 books, 0 hats, 2 balls.
+So, Bob gets (1-0)=1 books, (4-0)=4 hats, (2-2)=0 balls.
+Value of proposal for Alice:  (0*2) + (0*1) + (2*1) = 0+0+2 = 2/10
+Value of proposal for Bob:  (1*0) + (4*0) + (0*5) = 0+0+0 = 0/10
+Alice gets 2/10 and Bob gets 0/10. Difference in payoffs 2-0 = 2. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 3/3. last try.
+items: book=1, hat=4, ball=2
+Bob values: ball:5 > hat:0 = book:0
+Alice values: book:2 = ball:2 > hat:1
+old proposal: Alice gets 0 books, 0 hats, 2 balls. Alice gets 2/10 and Bob gets 0/10.
+new proposal: Alice gets 0 books, 0 hats, 1 balls.
+So, Bob gets (1-0)=1 books, (4-0)=4 hats, (2-1)=1 balls.
+Value of proposal for Alice:  (0*2) + (0*1) + (1*1) = 0+0+1 = 1/10
+Value of proposal for Bob:  (1*0) + (4*0) + (1*5) = 0+0+5 = 5/10
+Alice gets 1/10 and Bob gets 5/10. Difference in payoffs 5-1 = 4. This is a bad deal as payoffs are not close.
+Summary of tries:
+Try 1/3: Alice gets 4/10 and Bob gets 5/10. Difference in payoffs 5-4 = 1.
+Try 2/3: Alice gets 2/10 and Bob gets 0/10. Difference in payoffs 2-0 = 2.
+Try 3/3: Alice gets 1/10 and Bob gets 5/10. Difference in payoffs 5-1 = 4.
+So, the best deal is the second try.
+Minimum difference is 1. So, we go with try 1/3. Alice gets 1 books, 1 hats, 1 balls.
+propose: book=1 hat=1 ball=1
+
+## New Deal
+items available:
+book=2
+hat=2
+ball=2
+Bob's values: book=0 hat=5 ball=0
+Alice's values: book=3 hat=1 ball=1
+Q: What is a proposal that gives similar payoffs?
+Try 1/3.
+items: book=2, hat=2, ball=2
+Bob values: hat:5 > book:0 = ball:0
+Alice values: book:3 > ball:1 = hat:1
+In a proposal with similar payoffs, Alice gets 2 books, 1 hats, 2 balls.
+So, Bob gets (2-2)=0 books, (2-1)=1 hats, (2-2)=0 balls.
+Value of proposal for Alice:  (2*3) + (1*1) + (2*1) = 6+1+2 = 9/10
+Value of proposal for Bob:  (0*0) + (1*5) + (0*0) = 0+5+0 = 5/10
+Alice gets 9/10 and Bob gets 5/10. Difference in payoffs 9-5 = 4. This is a bad deal as payoffs are not close.
+So, let's try again.
+Try 2/3.
+items: book=2, hat=2, ball=2
+Bob values: hat:5 > book:0 = ball:0
+Alice values: book:3 > ball:1 = hat:1
+old proposal: Alice gets 2 books, 1 hats, 2 balls. Alice gets 9/10 and Bob gets 5/10.
+new proposal: Alice gets 1 book, 1 hats, 1 balls.
+So, Bob gets (2-1)=1 books, (2-1)=1 hats, (2-1)=1 balls.
+Value of proposal for Alice:  (1*3) + (1*1) + (1*1) = 3+1+1 = 5/10
+Value of proposal for Bob:  (1*0) + (1*5) + (1*0) = 0+5+0 = 5/10
+Alice gets 5/10 and Bob gets 5/10. Difference in payoffs 5-5 = 0. This is a good deal and cant be made better.
+Minimum difference is 0. So, we go with try 2/3. Alice gets 1 books, 1 hats, 1 balls.
+propose: book=1 hat=1 ball=1
+
+## New Deal
+items available:
+book=1
+hat=1
+ball=4
+Bob's values: book=4 hat=2 ball=1
+Alice's values: book=7 hat=3 ball=0
+Q: What is a proposal that gives similar payoffs?
+Try 1/3.
+items: book=1, hat=1, ball=4
+Bob values: book:4 > hat:2 > ball:1
+Alice values: book:7 > hat:3 > ball:0
+In a proposal with similar payoffs, Alice gets 1 books, 0 hats, 0 balls.
+So, Bob gets (1-1)=0 books, (1-0)=1 hats, (4-0)=4 balls.
+Value of proposal for Alice:  (1*7) + (0*3) + (0*0) = 7+0+0 = 7/10
+Value of proposal for Bob:  (0*4) + (1*2) + (4*1) = 0+2+4 = 6/10
+Alice gets 7/10 and Bob gets 6/10. Difference in payoffs 7-6 = 1. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 2/3.
+items: book=1, hat=1, ball=4
+Bob values: book:4 > hat:2 > ball:1
+Alice values: book:7 > hat:3 > ball:0
+old proposal: Alice gets 1 books, 0 hats, 0 balls. Alice gets 7/10 and Bob gets 6/10.
+new proposal: Alice gets 0 books, 1 hats, 0 balls.
+So, Bob gets (1-0)=1 books, (1-1)=0 hats, (4-0)=4 balls.
+Value of proposal for Alice:  (0*7) + (1*3) + (0*0) = 0+3+0 = 3/10
+Value of proposal for Bob:  (1*4) + (0*2) + (4*1) = 4+0+4 = 8/10
+Alice gets 3/10 and Bob gets 8/10. Difference in payoffs 8-3 = 5. This is a bad deal as payoffs are not close.
+So, let's try again.
+Try 3/3. last try.
+items: book=1, hat=1, ball=4
+Bob values: book:4 > hat:2 > ball:1
+Alice values: book:7 > hat:3 > ball:0
+old proposal: Alice gets 0 books, 1 hats, 0 balls. Alice gets 3/10 and Bob gets 8/10.
+new proposal: Alice gets 1 books, 1 hats, 0 balls.
+So, Bob gets (1-1)=0 books, (1-1)=0 hats, (4-0)=4 balls.
+Value of proposal for Alice:  (1*7) + (1*3) + (0*0) = 7+3+0 = 10/10
+Value of proposal for Bob:  (0*4) + (0*2) + (4*1) = 0+0+4 = 4/10
+Alice gets 10/10 and Bob gets 4/10. Difference in payoffs 10-4 = 6. This is a bad deal as payoffs are not close.
+Summary of tries:
+Try 1/3: Alice gets 7/10 and Bob gets 6/10. Difference in payoffs 7-6 = 1.
+Try 2/3: Alice gets 3/10 and Bob gets 8/10. Difference in payoffs 8-3 = 5.
+Try 3/3: Alice gets 10/10 and Bob gets 4/10. Difference in payoffs 10-4 = 6.
+So, the best deal is the first try.
+Minimum difference is 1. So, we go with try 1/3. Alice gets 1 books, 0 hats, 0 balls.
+propose: book=1 hat=0 ball=0
+
+## New Deal
+items available:
+book=1
+hat=4
+ball=1
+Bob's values: book=2 hat=2 ball=0
+Alice's values: book=4 hat=0 ball=6
+Q: What is a proposal that gives similar payoffs?
+Try 1/3.
+items: book=1, hat=4, ball=1
+Bob values: book:2 = hat:2 > ball:0
+Alice values: ball:6 > book:4 > hat:0
+In a proposal with similar payoffs, Alice gets 1 books, 0 hats, 1 balls.
+So, Bob gets (1-1)=0 books, (4-0)=4 hats, (1-1)=0 balls.
+Value of proposal for Alice:  (1*4) + (0*0) + (1*6) = 4+0+6 = 10/10
+Value of proposal for Bob:  (0*2) + (4*2) + (0*0) = 0+8+0 = 8/10
+Alice gets 10/10 and Bob gets 8/10. Difference in payoffs 10-8 = 2. This is a good deal but we might be able to do better.
+So, let's try again.
+Try 2/3.
+items: book=1, hat=4, ball=1
+Bob values: book:2 = hat:2 > ball:0
+Alice values: ball:6 > book:4 > hat:0
+old proposal: Alice gets 1 books, 0 hats, 1 balls. Alice gets 10/10 and Bob gets 8/10.
+new proposal: Alice gets 0 books, 0 hats, 1 balls.
+So, Bob gets (1-0)=1 books, (4-0)=4 hats, (1-1)=0 balls.
+Value of proposal for Alice:  (0*4) + (0*0) + (1*6) = 0+0+6 = 6/10
+Value of proposal for Bob:  (1*2) + (4*2) + (0*0) = 2+8+0 = 10/10
+Alice gets 6/10 and Bob gets 10/10. Difference in payoffs 10-6 = 4. This is a bad deal as payoffs are not close.
+So, let's try again.
+Try 3/3. last try.
+items: book=1, hat=4, ball=1
+Bob values: book:2 = hat:2 > ball:0
+Alice values: ball:6 > book:4 > hat:0
+old proposal: Alice gets 0 books, 0 hats, 1 balls. Alice gets 6/10 and Bob gets 10/10.
+new proposal: Alice gets 0 books, 2 hats, 1 balls.
+So, Bob gets (1-0)=1 books, (4-2)=2 hats, (1-1)=0 balls.
+Value of proposal for Alice:  (0*4) + (2*0) + (1*6) = 0+0+6 = 6/10
+Value of proposal for Bob:  (1*2) + (2*2) + (0*0) = 2+4+0 = 6/10
+Alice gets 6/10 and Bob gets 6/10. Difference in payoffs 6-6 = 0. This is a good deal and cant be made better.
+Minimum difference is 0. So, we go with try 3/3. Alice gets 0 books, 2 hats, 1 balls.
+propose: book=0 hat=2 ball=1

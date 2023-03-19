@@ -1,0 +1,69 @@
+Q:Bob and Gopher are playing a game. They get rewards with the following rules:
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4
+Bob and Gopher want to maximize their rewards. Bob does not think about their opponent and only plays the action with the highest expected reward.Gopher thinks about other players' reasoning. What action should Gopher play?
+A:Let's reason about what Bob wants.
+Bob wants to maximize their reward.
+Bob doesn't think about others. So, let's calculate the expected reward of Bob's actions.
+If Bob plays b1,
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2; Bob's reward r11=(br11)=br11=-1
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4; Bob's reward r12=(br12)=br12=5
+So, Bob's expected reward for action b1 is (-1+5)/2=4/2=2.0.
+If Bob plays b2,
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2; Bob's reward r21=(br21)=br21=1
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4; Bob's reward r22=(br22)=br22=3
+So, Bob's expected reward for action b2 is (1+3)/2=4/2=2.0.
+As Bob's reward for b1=2.0, b2=2.0, 2.0 = 2.0, b1 = b2, Bob will play b1 or b2.
+Let's reason about what Gopher wants.
+Gopher wants to maximize their reward.
+As Bob will play b1 or b2, we need to calculate Gopher's expected reward over Bob's actions.
+If Gopher plays a1,
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=-1; Gopher's reward gr11=-2; Gopher's reward r11=(gr11)=gr11=-2
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=1; Gopher's reward gr21=2; Gopher's reward r21=(gr21)=gr21=2
+So, Gopher's expected reward for action a1 is (-2+2)/2=0/2=0.0.
+If Gopher plays a2,
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=5; Gopher's reward gr12=-4; Gopher's reward r12=(gr12)=gr12=-4
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=3; Gopher's reward gr22=4; Gopher's reward r22=(gr22)=gr22=4
+So, Gopher's expected reward for action a2 is (-4+4)/2=0/2=0.0.
+As Gopher's reward for a1=0.0, a2=0.0, 0.0 = 0.0, a1 = a2, Gopher will play a1 or a2.
+Gopher's action:a1 or a2.
+
+Q:Bob and Gopher are playing a game. Bob can signal Gopher the action that he intends to play. Bob can say the truth or lie about his intentions. They get rewards with the following rules:
+1. Bob:b1 and Gopher:a1, then; Bob's reward br11=1; Gopher's reward gr11=2
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=3; Gopher's reward gr12=4
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=5; Gopher's reward gr21=6
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=7; Gopher's reward gr22=8
+Bob and Gopher want to maximize their rewards. Bob tells Gopher that he's going to play b2. Bob assumes that Gopher will believe whatever he says. Gopher needs to infer from the rewards if Bob is telling the truth. What action should Gopher play?
+A:Let's reason about what Bob wants.
+Bob wants to maximize their reward.
+Let's compare the rewards of Bob's actions if he's saying the truth and if he's telling a lie. We will search through Gopher's actions to see what they play.
+If Bob is telling the truth and plays b2,
+If Gopher plays a1,
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=5; Gopher's reward gr21=6; Gopher's reward r21=(gr21)=gr21=6
+So, Gopher's expected reward for action a1 if Bob plays b2 and is saying the truth = (6)/1=6.0
+If Gopher plays a2,
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=7; Gopher's reward gr22=8; Gopher's reward r22=(gr22)=gr22=8
+So, Gopher's expected reward for action a1 if Bob plays b2 and is saying the truth = (8)/1=8.0
+As Gopher's reward for a1=6.0, a2=8.0, 6.0 < 8.0, a1 < a2, Gopher will play a2 if Bob plays b2 and is saying the truth.
+Bob's reward if he is telling the truth and plays b2, then Gopher plays a2
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=7; Gopher's reward gr22=8; Bob's reward r22=(br22)=br22=7
+So, Bob's expected reward for saying the truth = (7)/1=7.0
+If Bob is telling a lie and plays b1,
+As Bob expects Gopher to believe it as truth. Gopher's response is expected to be the same as the true case and will play a2.
+Bob's reward if he is telling a lie: Bob plays b1 and from above Gopher plays a2
+2. Bob:b1 and Gopher:a2, then; Bob's reward br12=3; Gopher's reward gr12=4; Bob's reward r12=(br12)=br12=3
+So, Bob's expected reward for telling a lie = (3)/1=3.0
+As Bob's reward for telling the truth=7.0, telling a lie=3.0, 7.0 > 3.0, telling the truth > telling a lie, Bob will tell the truth.
+Let's reason about what Gopher wants.
+Gopher wants to maximize their reward.
+As Bob is telling the truth, he will play b2. Let's calculate Gopher's expected rewards.
+If Gopher plays a1,
+3. Bob:b2 and Gopher:a1, then; Bob's reward br21=5; Gopher's reward gr21=6; Gopher's reward r21=(gr21)=gr21=6
+So, Gopher's expected reward for action a1 = (6)/1=6.0
+If Gopher plays a2,
+4. Bob:b2 and Gopher:a2, then; Bob's reward br22=7; Gopher's reward gr22=8; Gopher's reward r22=(gr22)=gr22=8
+So, Gopher's expected reward for action a2 = (8)/1=8.0
+As Gopher's reward for a1=6.0, a2=8.0, 6.0 < 8.0, a1 < a2, Gopher will play a2.
+Gopher's action:a2.
